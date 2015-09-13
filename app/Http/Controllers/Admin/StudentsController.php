@@ -18,7 +18,8 @@ class StudentsController extends Controller
      */
     public function index()
     {
-        return Student::all();
+        $students = Student::all();
+        return view('admin.student.index', compact('students'));
     }
 
     /**
@@ -28,7 +29,7 @@ class StudentsController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.student.create');
     }
 
     /**
@@ -84,6 +85,6 @@ class StudentsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        return "Deleted successfully";
     }
 }

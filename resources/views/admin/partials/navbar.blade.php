@@ -7,7 +7,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li><a href="#">Teachers</a></li>
-                <li><a href="#">Students</a></li>
+                <li><a href="/admin/student">Students</a></li>
             </ul>
         </li>
         <li @if (Request::is('admin/post*')) class="active" @endif>
